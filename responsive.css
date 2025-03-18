@@ -1,0 +1,160 @@
+/* Existing styles remain unchanged */
+
+/* Responsive adjustments */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    #nav-links { 
+        width: 50%;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .gallery,
+    .contact,
+    .collage,
+    .extra-services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-text {
+        width: 80%;
+        padding-right: 0;
+    }
+    .contact-form {
+        width: 80%;
+        margin-left: 10%; /* Shift form to the right */
+    }
+    .contact-heading {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .collage img {
+        margin: 0 10px; /* Even spacing between all images */
+    }
+    .pricing-card {
+        height: 25rem; /* Reduced height for a better balance */
+        margin: 10px auto; /* Center and space out pricing cards */
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card {
+        height: 18rem; /* Shorter height */
+        width: 90%; /* Wider layout */
+        margin: 10px auto;
+        padding: 20px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .hardscape {
+        display: none;
+    }
+    .second-image {
+        margin-left: 200px;
+    }
+    .gallery{
+        padding-top:40px ;
+    }
+    #nav-links{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 30%;
+    }
+    #nav-icons{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 22%;
+    }
+    #Quote {
+        margin-right:0rem ;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    #nav-links, #nav-icons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .landscape-image,
+    .second-image,
+    .card,
+    .ex-services,
+    .pricing-card,
+    .contact-form {
+        width: 100%;
+        height: auto;
+    }
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .contact-form:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .contact-form button {
+        padding: 8px 12px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .contact-form button:hover {
+        background-color: #4CAF50;
+        color: #fff;
+        transform: scale(1.05);
+    }
+    .contact-heading {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 10px;
+        margin-bottom: 1rem;
+        color: #4CAF50;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+    .contact-heading h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        color: #003F2E;
+    }
+    .contact-heading h1 span {
+        font-size: 1.2rem;
+    }
+    .leaf-image {
+        display: block;
+        margin-left: 0;
+        width: 120%;
+        height: auto;
+        transform: translateX(-10%);
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer div {
+        padding: 10px 0;
+    }
+}
