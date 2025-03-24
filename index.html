@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 <body>
     <header id="navbar">  
         <h1 id="logo">landscapers</h1>
-        <div id="nav-links">
-            <div class="links">Home <i class="fa-solid fa-caret-down"></i></div>
-            <a class="links"  href="#about">About</a>
-            <div class="links">services <i class="fa-solid fa-caret-down"></i></div>
-            <div class="links">Portfolio <i class="fa-solid fa-caret-down"></i></div>
+        <div class="hidden" id="nav-links">
+            <div class="links hidden">Home <i class="fa-solid fa-caret-down"></i></div>
+            <a class="links hidden"  href="#about">About</a>
+            <div class="links hidden">services <i class="fa-solid fa-caret-down"></i></div>
+            <div class="links hidden">Portfolio <i class="fa-solid fa-caret-down"></i></div>
         </div>
-        <div id="nav-icons">
-            <i id="icon"  class="fa-solid fa-magnifying-glass"></i>
-            <i id="icon"   class="fa-solid fa-bars"></i>
-            <a href="#Quote" id="Quote">Get a Quote</a>
+        <div class="hidden" id="nav-icons">
+            <i id="icon"   class="fa-solid fa-magnifying-glass"></i>
+            <i id="icon"    class="fa-solid fa-bars"></i>
+            <a href="#Quote" id="Quote" class="hidden">Get a Quote</a>
         </div>
     </header>
 
@@ -95,7 +95,7 @@
         <div class="tab-heading">
             <div>
                 <div class="gallery-heading" id="full-width"><h1>Get More </h1></div>
-                <div class="gallery-heading"><h1>Value From Our Landscapers</h1></div>
+                <div class="gallery-heading"><h1 id="mob-response">Value From Our Landscapers</h1></div>
             </div>
         </div>
         <span id="tab-para" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing </span><span id="tab-para" class="para"> Voluptatibus, minus. Quidem architecto corporis,</span><span id="tab-para" class="para">labore inventore officia ex incidunt odio voluptas reiciendis suscipit eaque, et nemo vitae, amet </span>
@@ -122,7 +122,7 @@
     <section class="Pricing-container">
         <span class="price-para">Price Plan </span>
         <div class="tab-heading">
-            <span class="gallery-heading"><h1>Smart Pricing Package </h1></span>
+            <span class="gallery-heading" id="mob-response"><h1>Smart Pricing Package </h1></span>
         </div>
         <span id="tab-para" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing </span><span id="tab-para" class="para"> Voluptatibus, minus. Quidem architecto corporis,</span><span id="tab-para" class="para">labore inventore officia ex incidunt odio voluptas reiciendis suscipit eaque, et nemo vitae, amet </span>
 
@@ -170,7 +170,7 @@
         <div class="tab-heading">
             <div>
                 <div class="gallery-heading" id="full-width"><h1>Our Latest </h1></div>
-                <div class="gallery-heading"><h1>Project of Landscape Work</h1></div>
+                <div class="gallery-heading" id="mob-response"><h1>Project of Landscape Work</h1></div>
             </div>
         </div>
         
@@ -178,15 +178,19 @@
         <section class="collage">
             <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3WhM3HYDBYYVknC5QaXlpXz_1Dv4jGqbgqSFZjxdoEeRHKZfX" alt="Hardscape" class="alt-image">
             <img src="https://cdn.pixabay.com/photo/2024/02/23/21/25/landscape-8592826_640.jpg" alt="There should be a landscape image here" class="alt2-image">
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh4ntQISzrEaqLI7QQcHxLosVgWOF2ptVlafWZtm8YJZNqlf4I" alt="Installation" class="alt-image">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh4ntQISzrEaqLI7QQcHxLosVgWOF2ptVlafWZtm8YJZNqlf4I" alt="Installation" class="alt-image alt-image-responsive">
             
         </section>
     </section>
 
     <section class="contact">
         <div class="contact-heading">
-            <h1 class="heading">Fill The Form To Get <br>A Free Consultation</h1>
-            <p id="lighting">Lorem ipsum dolor sit amet, consectetur adipiscing <br> Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut <br> sapien et ex volutpat tincidunt eget at felis vivamus hendrerit.</p>
+           <div class="contact-head-container">
+            <div class="contact-head-div">
+                <h1 class="heading">Fill The Form To Get <br>A Free Consultation</h1>
+                <p id="lighting">Lorem ipsum dolor sit amet, consectetur adipiscing <br> Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut <br> sapien et ex volutpat tincidunt eget at felis vivamus hendrerit.</p>
+            </div>
+           </div>
             <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDrREZWTGEtgzMhoY9l28WiRGk_7V1bTH2_e79RqeFd3kQa3eC" alt="leaf image" class="leaf-image">
         </div>
         <div class="contact-form">
@@ -248,7 +252,7 @@
            
             <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Suite 500, New York, NY 10001</p>
             <p><i class="fas fa-phone"></i> +1 (333) 000-0000</p>
-            <p>made with <i class="fa-solid fa-heart" id="icon"></i> by majunior</p>
+            <p>made with <i class="fa-solid fa-heart" id="hearts"></i> by majunior</p>
             
         </div>
     </footer>

@@ -269,6 +269,7 @@ ul li::marker{
     padding: 20px;
     text-align:center;
     margin: 20px;
+    border-radius: 10px;
 }
 .extra-services:hover{
     background-color: #eae8e8;
@@ -285,9 +286,10 @@ ul li::marker{
     color: #7f8c8d;
 }
 .extra-services img{
-    width: 300px;
-    height: 300px;
+    width: 95%;
+    height: 15vw;
     object-fit: cover;
+    border-radius: 10px;
 }
 .extra-services img:hover{
     transform: scale(1.05);
@@ -593,5 +595,13 @@ p{
 #main:hover{
     color: #4CAF50;
     transform: scale(1.05);
+    transition: transform 0.2s;
+}
+#hearts{
+    font-size: 1.5rem;
+}
+#hearts:hover{
+    color: #4CAF50;
+    transform: scale(1.3);
     transition: transform 0.2s;
 }
